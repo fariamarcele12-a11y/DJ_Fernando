@@ -1,55 +1,871 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="menu">
-            <h1 class="logo">Dj Fernando</h1>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="">Eventos</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="DJ Fernando - O som que faz você vibrar | Site oficial do DJ Fernando"
+    />
+    <meta
+      name="keywords"
+      content="DJ Fernando, música eletrônica, DJ profissional, festas, eventos, música"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DJ Fernando | O Som que Conecta Emoções</title>
 
-            </ul>
-            </ul>
-        </nav>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/nowfont.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/rockville.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2">
+            <div class="header__logo">
+              <a href="./index.html">
+                <img src="img/logo1.png" alt="DJ Fernando Logo"/>
+                <!--<h2 class="logo">DJ Fernando Lopes</h2>-->
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-10 col-md-10">
+            <div class="header__nav">
+              <nav class="header__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Início</a></li>
+                 <!-- <li><a href="./about.html">Sobre</a></li>
+                  <li><a href="./discography.html">Discografia</a></li>
+                  <li><a href="./tours.html">Turnês</a></li>
+                  <li><a href="./videos.html">Vídeos</a></li>
+                  <li>
+                    <a href="#">Páginas</a>
+                    <ul class="dropdown">
+                      <li><a href="./about.html">Sobre</a></li>
+                      <li><a href="./blog.html">Blog</a></li>
+                      <li>
+                        <a href="./blog-details.html">Detalhes do Blog</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="./contact.html">Contato</a></li>-->
+                </ul>
+              </nav>
+              <div class="header__right__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/djfernandolopes_oficial/"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-spotify"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
     </header>
+    <!-- Header Section End -->
 
-    <!-- CONTEÚDO-->
-    <main>
-        <h2>Bem Vindo!</h2>
-        <p>Conteúdo do site....</p>
-    </main>
+    <!-- Hero Section Begin -->
+    <section class="hero spad set-bg" data-setbg="img/hero-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="hero__text">
+              <span>Novo Single</span>
+              <h1>Sinta a Batida do Momento</h1>
+              <p>
+                DJ Fernando convida você para uma experiência musical única.
+                <br />Prepare-se para sentir cada batida e se conectar com a
+                energia que só a música pode proporcionar.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=K4DyBUG242c"
+                class="play-btn video-popup"
+                ><i class="fa fa-play"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linear__icon">
+        <i class="fa fa-angle-double-down"></i>
+      </div>
+    </section>
+    <!-- Hero Section End -->
 
-    <!-- RODAPÉ-->
-    <footer class="rodape">
-        <p>© 2026 MeuSite - Todos os direitos reservados</p>
+    <!-- Event Section Begin -->
+    <section class="event spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Próximos Eventos</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="event__slider owl-carousel">
+            <div class="col-lg-4">
+              <div class="event__item">
+                <div
+                  class="event__item__pic set-bg"
+                  data-setbg="img/events/event-1.jpg"
+                >
+                  <div class="tag-date">
+                    <span>15 Dez, 2024</span>
+                  </div>
+                </div>
+                <div class="event__item__text">
+                  <h4>Fernando no Sunset Festival</h4>
+                  <p>
+                    <i class="fa fa-map-marker"></i> Parque Ibirapuera, São
+                    Paulo - SP
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="event__item">
+                <div
+                  class="event__item__pic set-bg"
+                  data-setbg="img/events/event-2.jpg"
+                >
+                  <div class="tag-date">
+                    <span>22 Dez, 2024</span>
+                  </div>
+                </div>
+                <div class="event__item__text">
+                  <h4>Residence Club Experience</h4>
+                  <p>
+                    <i class="fa fa-map-marker"></i> Warung Club, Florianópolis
+                    - SC
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="event__item">
+                <div
+                  class="event__item__pic set-bg"
+                  data-setbg="img/events/event-3.jpg"
+                >
+                  <div class="tag-date">
+                    <span>05 Jan, 2025</span>
+                  </div>
+                </div>
+                <div class="event__item__text">
+                  <h4>Réveillon da Virada</h4>
+                  <p>
+                    <i class="fa fa-map-marker"></i> Praia de Copacabana, Rio de
+                    Janeiro - RJ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="event__item">
+                <div
+                  class="event__item__pic set-bg"
+                  data-setbg="img/events/event-2.jpg"
+                >
+                  <div class="tag-date">
+                    <span>15 Jan, 2025</span>
+                  </div>
+                </div>
+                <div class="event__item__text">
+                  <h4>Summer Beats Tour</h4>
+                  <p>
+                    <i class="fa fa-map-marker"></i> Green Valley, Camboriú - SC
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Event Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about__pic">
+              <img src="img/about/about.png" alt="DJ Fernando" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about__text">
+              <div class="section-title">
+                <h2>DJ Fernando</h2>
+                <h1>Sobre mim</h1>
+              </div>
+              <p>
+                Mais do que um DJ, sou um contador de histórias através das
+                batidas. Minha missão é transformar cada apresentação em uma
+                jornada inesquecível, conectando corações e mentes através da
+                música. Com mais de 10 anos de estrada, já vibrei nos maiores
+                palcos do Brasil e do mundo, levando minha energia única para
+                milhares de pessoas. Prepare-se para sentir a música como nunca
+                antes.
+              </p>
+              <a href="#" class="primary-btn">VAMOS CONVERSAR?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 p-0">
+            <div
+              class="services__left set-bg"
+              data-setbg="img/services/service-left.jpg"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=JGwWNGJdvx8"
+                class="play-btn video-popup"
+                ><i class="fa fa-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="row services__list">
+              <div class="col-lg-6 p-0 order-lg-1 col-md-6 order-md-1">
+                <div class="service__item deep-bg">
+                  <img src="img/services/service-1.png" alt="" />
+                  <h4>Casamentos</h4>
+                  <p>
+                    O momento mais especial merece a trilha sonora perfeita.
+                    Crio a atmosfera ideal para celebrar o amor.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 p-0 order-lg-2 col-md-6 order-md-2">
+                <div class="service__item">
+                  <img src="img/services/service-2.png" alt="" />
+                  <h4>Clubes e Bares</h4>
+                  <p>
+                    Energia contagiante que faz a pista ferver do início ao fim.
+                    A experiência completa que seu público merece.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 p-0 order-lg-4 col-md-6 order-md-4">
+                <div class="service__item deep-bg">
+                  <img src="img/services/service-4.png" alt="" />
+                  <h4>Aulas de DJ</h4>
+                  <p>
+                    Compartilho minha experiência e técnicas em aulas
+                    personalizadas para quem deseja entrar no mundo da música.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 p-0 order-lg-3 col-md-6 order-md-3">
+                <div class="service__item">
+                  <img src="img/services/service-3.png" alt="" />
+                  <h4>Eventos Corporativos</h4>
+                  <p>
+                    Profissionalismo e qualidade musical para tornar seu evento
+                    empresarial um marco de sucesso e descontração.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Track Section Begin -->
+    <section class="track spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="section-title">
+              <h2>Últimos Lançamentos</h2>
+              <h1>Podcast Musical</h1>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="track__all">
+              <a href="#" class="primary-btn border-btn">Ver todas as faixas</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 p-0">
+            <div class="track__content nice-scroll">
+              <div class="single_player_container">
+                <h4>Sunset Vibes - Fernando Remix</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_1"
+                  data-url="music/1.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_1"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <h4>Ritmo da Cidade (Original Mix)</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_2"
+                  data-url="music/2.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_2"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <h4>Noite Infinita (Fernando & Friends)</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_3"
+                  data-url="music/3.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_3"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <h4>Alvorada Eletrônica</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_4"
+                  data-url="music/4.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_4"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <h4>Frequência do Amor</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_5"
+                  data-url="music/5.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_5"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single_player_container">
+                <h4>Fernando Live Set - Verão 2024</h4>
+                <div
+                  class="jp-jplayer jplayer"
+                  data-ancestor=".jp_container_6"
+                  data-url="music/6.mp3"
+                ></div>
+                <div
+                  class="jp-audio jp_container_6"
+                  role="application"
+                  aria-label="media player"
+                >
+                  <div class="jp-gui jp-interface">
+                    <!-- Player Controls -->
+                    <div class="player_controls_box">
+                      <button
+                        class="jp-play player_button"
+                        tabindex="0"
+                      ></button>
+                    </div>
+                    <!-- Progress Bar -->
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div
+                                class="jp-current-time"
+                                role="timer"
+                                aria-label="time"
+                              >
+                                0:00
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="jp-duration ml-auto"
+                        role="timer"
+                        aria-label="duration"
+                      >
+                        00:00
+                      </div>
+                    </div>
+                    <!-- Volume Controls -->
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <i class="fa fa-volume-down"></i>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div
+                          class="jp-volume-bar-value"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 p-0">
+            <div class="track__pic">
+              <img src="img/track-right.jpg" alt="DJ Fernando no estúdio" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Track Section End -->
+
+    <!-- Youtube Section Begin -->
+    <section class="youtube spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Canal no YouTube</h2>
+              <h1>Vídeos Imperdíveis</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="youtube__item">
+              <div
+                class="youtube__item__pic set-bg"
+                data-setbg="img/youtube/youtube-1.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=yJg-Y5byMMw?autoplay=1"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="youtube__item__text">
+                <h4>DJ Fernando Ao Vivo | Sunset Festival 2024</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="youtube__item">
+              <div
+                class="youtube__item__pic set-bg"
+                data-setbg="img/youtube/youtube-2.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=K4DyBUG242c?autoplay=1"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="youtube__item__text">
+                <h4>Making Of: "Ritmo da Cidade" (Clipe Oficial)</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="youtube__item">
+              <div
+                class="youtube__item__pic set-bg"
+                data-setbg="img/youtube/youtube-3.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=S19UcWdOA-I?autoplay=1"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="youtube__item__text">
+                <h4>Entrevista Exclusiva: A Trajetória do DJ Fernando</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Youtube Section End -->
+
+    <!-- Countdown Section Begin -->
+    <section class="countdown spad set-bg" data-setbg="img/countdown-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="countdown__text">
+              <h1>Tomorrowland Brasil 2025</h1>
+              <h4>O maior festival começa em:</h4>
+            </div>
+            <div class="countdown__timer" id="countdown-time">
+              <div class="countdown__item">
+                <span>120</span>
+                <p>dias</p>
+              </div>
+              <div class="countdown__item">
+                <span>15</span>
+                <p>horas</p>
+              </div>
+              <div class="countdown__item">
+                <span>30</span>
+                <p>minutos</p>
+              </div>
+              <div class="countdown__item">
+                <span>45</span>
+                <p>segundos</p>
+              </div>
+            </div>
+            <div class="buy__tickets">
+              <a href="#" class="primary-btn">Garanta seu ingresso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Countdown Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad set-bg" data-setbg="img/footer-bg.png">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer__address">
+              <ul>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <p>Telefone</p>
+                  <h6>+55 (22) 99903-7776</h6>
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <p>Email</p>
+                  <h6>fernandolopesdj@yahoo.com.br</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 col-md-6">
+            <div class="footer__social">
+              <h2>DJ Fernando</h2>
+              <div class="footer__social__links">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/djfernandolopes_oficial/"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-spotify"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1 col-md-6">
+            <div class="footer__newslatter">
+              <h4>Fique por dentro</h4>
+              <form action="#">
+                <input type="text" placeholder="Seu melhor e-mail" />
+                <button type="submit"><i class="fa fa-send-o"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright personalizado para DJ Fernando -->
+        <div class="footer__copyright__text">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <strong>DJ Fernando</strong> | Todos os direitos reservados. A
+            música é a minha linguagem, e compartilhá-la com você é a minha
+            maior paixão.
+          </p>
+        </div>
+      </div>
     </footer>
 
+    <!-- Js Plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
 
-  <!--  <h1>Título</h1>
-    <h2>Subtítulo</h2>
-    <h3>Subseção</h3>
-    <h4>Sub-subseção</h4>
-    <h5>Detalhes menores</h5>
-    <h6>Menor nível</h6>
-
-    <p><strong>Marcele</strong> & <b>Fernando</b></p>
-    <br>
-    <hr>
-    <i>italico</i>
-    <em>italico</em>
-    <u>teste</u>
-    <mark>Destaque</mark>
-    <small>teste menor</small>
-
-    <a href="https://www.google.com/?hl=pt_BR">link</a>-->
-
-</body>
+    <!-- Music Plugin -->
+    <script src="js/jplayerInit.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+  </body>
 </html>
