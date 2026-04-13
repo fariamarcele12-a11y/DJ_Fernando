@@ -93,9 +93,9 @@
     /*------------------
 		Magnific
 	--------------------*/
-    $('.video-popup').magnificPopup({
+    /*$('.video-popup').magnificPopup({
         type: 'iframe'
-    });
+    });*/
 
     /*------------------
         CountDown
