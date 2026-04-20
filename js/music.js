@@ -1,4 +1,4 @@
-document.addEventListener(
+/*document.addEventListener(
   "click",
   function () {
     const audio = document.getElementById("musica");
@@ -7,4 +7,4 @@ document.addEventListener(
   {
     once: true,
   },
-);
+);*/

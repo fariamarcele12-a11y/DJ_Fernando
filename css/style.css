@@ -171,20 +171,20 @@ ol {
 	text-transform: uppercase;
 	padding: 14px 25px 12px;
 	color: #ffffff;
-	background: #5c00ce;
+	background: #999a9c;
 	letter-spacing: 2px;
 }
 
 .primary-btn.border-btn {
 	background: transparent;
-	border: 2px solid #5c00ce;
+	border: 2px solid #999a9c;
 	color: #111111;
 }
 
 .site-btn {
 	font-size: 15px;
 	color: #ffffff;
-	background: #5c00ce;
+	background: #999a9c;
 	font-weight: 700;
 	letter-spacing: 2px;
 	border: none;
@@ -472,7 +472,7 @@ ol {
 
 .linear__icon i {
 	font-size: 50px;
-	color: #5c00ce;
+	color: #ffffff;
 }
 
 @-webkit-keyframes mymove {
@@ -587,7 +587,7 @@ ol {
 }
 
 .event__item__text p i {
-	color: #5c00ce;
+	color: #999a9c;
 	margin-right: 8px;
 	font-size: 17px;
 }
@@ -637,8 +637,8 @@ ol {
 }
 
 .jp-state-playing .jp-play {
-	background: #5c00ce !important;
-	border-color: #5c00ce !important;
+	background: #999a9c !important;
+	border-color: #999a9c !important;
 }
 
 .jp-state-playing .jp-play:after {
@@ -648,8 +648,8 @@ ol {
 }
 
 .jp-audio .jp-play:focus {
-	background: #5c00ce !important;
-	border-color: #5c00ce !important;
+	background: #999a9c !important;
+	border-color: #999a9c !important;
 }
 
 .jp-audio .jp-play:focus:after {
@@ -676,7 +676,7 @@ ol {
 .jp-play-bar {
 	position: relative;
 	height: 100%;
-	background: #5c00ce;
+	background: #999a9c;
 	overflow: visible !important;
 }
 
@@ -720,7 +720,7 @@ ol {
 }
 
 .jp-volume-bar-value {
-	background: #5c00ce;
+	background: #999a9c;
 	height: 100%;
 }
 
@@ -816,7 +816,7 @@ ol {
 
 .youtube__item__pic .play-btn {
 	font-size: 16px;
-	color: #5c00ce;
+	color: #999a9c;
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
@@ -958,7 +958,7 @@ ol {
 
 .discography__item__text span {
 	font-size: 18px;
-	color: #5c00ce;
+	color: #999a9c;
 	font-weight: 700;
 }
 
@@ -1044,7 +1044,7 @@ ol {
 
 .footer__address ul li i {
 	font-size: 18px;
-	color: #5c00ce;
+	color: #999a9c;
 	height: 50px;
 	width: 50px;
 	background: #ffffff;
@@ -1102,7 +1102,7 @@ ol {
 
 .footer__social .footer__social__links a {
 	font-size: 18px;
-	color: #5c00ce;
+	color: #999a9c;
 	height: 50px;
 	width: 50px;
 	background: #ffffff;
@@ -1164,7 +1164,7 @@ ol {
 
 .footer__newslatter form button {
 	font-size: 18px;
-	color: #5c00ce;
+	color: #999a9c;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1188,7 +1188,7 @@ ol {
 }
 
 .footer__copyright__text a:hover {
-	color: #5c00ce;
+	color: #999a9c;
 }
 
 .footer__copyright__text i {
@@ -1276,7 +1276,7 @@ ol {
 }
 
 .skills__content {
-	background: #5c00ce;
+	background: #999a9c;
 	height: 500px;
 	padding: 100px 70px 60px;
 }
@@ -1344,7 +1344,7 @@ ol {
 
 .skills__video .play-btn {
 	font-size: 26px;
-	color: #5c00ce;
+	color: #999a9c;
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
@@ -1423,7 +1423,7 @@ ol {
 .about__services__item__pic .icon {
 	height: 50px;
 	width: 50px;
-	background: #5c00ce;
+	background: #999a9c;
 	border-radius: 50%;
 	line-height: 50px;
 	text-align: center;
@@ -1549,9 +1549,9 @@ ol {
 	top: 15px;
 	height: 60px;
 	width: 60px;
-	background: -webkit-gradient(linear, left top, right top, from(#7E00AD), to(#5C00CE));
-	background: -o-linear-gradient(left, #7E00AD, #5C00CE);
-	background: linear-gradient(to right, #7E00AD, #5C00CE);
+	background: -webkit-gradient(linear, left top, right top, from(#7E00AD), to(#999a9c));
+	background: -o-linear-gradient(left, #7E00AD, #999a9c);
+	background: linear-gradient(to right, #7E00AD, #999a9c);
 	border-radius: 50%;
 	content: "";
 	z-index: -1;
@@ -1562,13 +1562,13 @@ ol {
 }
 
 .service__item {
-	background: #5c00ce;
+	background: #999a9c;
 	height: 320px;
 	padding: 70px 40px 40px 70px;
 }
 
 .service__item.deep-bg {
-	background: #5400BC;
+	background: #414244;
 }
 
 .service__item h4 {
@@ -1634,7 +1634,7 @@ ol {
 }
 
 .tours__item__text .tours__text__widget ul li i {
-	color: #5c00ce;
+	color: #999a9c;
 	position: absolute;
 	left: 0;
 	top: 3px;
@@ -1669,7 +1669,7 @@ ol {
 	font-weight: 700;
 	display: inline-block;
 	padding: 14px 25px 12px 30px;
-	background: #5c00ce;
+	background: #999a9c;
 	float: right;
 }
 
@@ -1753,7 +1753,7 @@ ol {
 .videos__large__item .play-btn {
 	height: 50px;
 	width: 50px;
-	background: #5c00ce;
+	background: #999a9c;
 	border-radius: 50%;
 	font-size: 18px;
 	line-height: 50px;
@@ -1819,7 +1819,7 @@ ol {
 .videos__item__pic .play-btn {
 	height: 40px;
 	width: 40px;
-	background: #5c00ce;
+	background: #999a9c;
 	border-radius: 50%;
 	font-size: 16px;
 	line-height: 40px;
@@ -1844,7 +1844,7 @@ ol {
 	list-style: none;
 	display: inline-block;
 	margin-right: 18px;
-	color: #5c00ce;
+	color: #999a9c;
 	position: relative;
 }
 
@@ -1936,7 +1936,7 @@ ol {
 .blog__large__text span {
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #5c00ce;
+	color: #999a9c;
 }
 
 .blog__large__text h4 {
@@ -2009,7 +2009,7 @@ ol {
 .blog__item__text span {
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #5c00ce;
+	color: #999a9c;
 }
 
 .blog__item__text h5 {
@@ -2202,7 +2202,7 @@ ol {
 .blog__details__item__text span {
 	font-size: 13px;
 	text-transform: uppercase;
-	color: #5c00ce;
+	color: #999a9c;
 }
 
 .blog__details__item__text h3 {
@@ -2284,7 +2284,7 @@ ol {
 
 .blog__details__quote i {
 	font-size: 36px;
-	color: #5c00ce;
+	color: #999a9c;
 	position: absolute;
 	right: 40px;
 	bottom: 35px;
@@ -2562,7 +2562,7 @@ ol {
 	border-radius: 50%;
 	line-height: 70px;
 	text-align: center;
-	color: #5c00ce;
+	color: #999a9c;
 	position: absolute;
 	left: 0;
 	top: -4px;
@@ -2811,7 +2811,7 @@ ol {
 		border-radius: 0;
 		padding: 12px 15px;
 		float: none;
-		background: #5c00ce;
+		background: #999a9c;
 	}
 	.slicknav_nav {
 		position: absolute;
@@ -2836,12 +2836,12 @@ ol {
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #5c00ce;
+		background: #999a9c;
 		color: #ffffff;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #5c00ce;
+		background: #999a9c;
 		color: #ffffff;
 	}
 	.service__item {
