@@ -58,7 +58,7 @@
                   <li class="active"><a href="./index.html">Início</a></li>
                   <li><a href="./about.html">Sobre</a></li>
                   <li><a href="./service.html">Serviços</a></li>
-                  
+
                   <li><a href="./videos.html">Vídeos</a></li>
                   <li><a href="./contact.html">Contato</a></li>
                 </ul>
@@ -166,28 +166,22 @@
                 <div
                   class="event__item__pic set-bg"
                   data-setbg="./img/services/palco.png"
-                >
-                </div>
+                ></div>
                 <div class="event__item__text">
                   <h4>Palco</h4>
-                  <p>
-                    Palcos profissionais para eventos.
-                  </p>
+                  <p>Palcos profissionais para eventos.</p>
                 </div>
               </div>
             </div>
-                        <div class="col-lg-4">
+            <div class="col-lg-4">
               <div class="event__item">
                 <div
                   class="event__item__pic set-bg"
                   data-setbg="./img/services/Painel_led.jpg"
-                >
-                </div>
+                ></div>
                 <div class="event__item__text">
                   <h4>Painel de Led</h4>
-                  <p>
-                    Painéis de LED de alta resolução.
-                  </p>
+                  <p>Painéis de LED de alta resolução.</p>
                 </div>
               </div>
             </div>
@@ -456,10 +450,31 @@
           <div class="col-lg-3 offset-lg-1 col-md-6">
             <div class="footer__newslatter">
               <h4>Fique por dentro</h4>
-              <form action="#">
-                <input type="text" placeholder="Seu melhor e-mail" />
+              <form
+                id="newsletterForm"
+                action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
+                method="POST"
+              >
+                <!-- Proteção anti-spam -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <!-- Redirecionamento após envio (opcional) -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://dj-fernando.vercel.app/obrigado.html"
+                />
+                <!-- Impede que o botão de enviar seja pressionado duas vezes -->
+                <input type="hidden" name="_blacklist" value="spammy pattern" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu melhor e-mail"
+                  required
+                />
                 <button type="submit"><i class="fa fa-send-o"></i></button>
               </form>
+              <div id="formFeedback" class="feedback-message"></div>
             </div>
           </div>
         </div>
@@ -493,5 +508,7 @@
     <script src="js/jquery.jplayer.min.js"></script>
     <script src="js/jplayerInit.js"></script>
     <script src="js/music.js"></script>
+
+    <script src="js/send_email.js"></script>
   </body>
 </html>

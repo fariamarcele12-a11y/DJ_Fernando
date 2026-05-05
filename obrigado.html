@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Obrigado por se inscrever - DJ Fernando Lopes"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrigado! | DJ Fernando Lopes</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <style>
+      body {
+        font-family: "Rajdhani", sans-serif;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .thankyou-container {
+        max-width: 600px;
+        width: 100%;
+        animation: fadeInUp 0.8s ease;
+      }
+
+      .thankyou-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 50px 30px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #28a745, #20c997);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        animation: scaleIn 0.5s ease 0.3s both;
+      }
+
+      .success-icon i {
+        font-size: 40px;
+        color: white;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .highlight {
+        color: #ff6b6b;
+        font-weight: 700;
+      }
+
+      .message {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .benefits {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 30px 0;
+        text-align: left;
+      }
+
+      .benefits h3 {
+        color: #ff6b6b;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .benefits ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .benefits li {
+        color: rgba(255, 255, 255, 0.8);
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .benefits li i {
+        color: #28a745;
+        font-size: 18px;
+        width: 25px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 30px 0;
+      }
+
+      .social-link {
+        width: 45px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+
+      .social-link:hover {
+        background: #ff6b6b;
+        transform: translateY(-3px);
+        color: white;
+      }
+
+      .btn-home {
+        display: inline-block;
+        padding: 12px 35px;
+        background: linear-gradient(135deg, #ff6b6b, #ff4444);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+      }
+
+      .btn-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        color: white;
+        text-decoration: none;
+      }
+
+      .music-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 107, 107, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .music-icon i {
+        color: white;
+        font-size: 24px;
+      }
+
+      .music-icon:hover {
+        transform: scale(1.1);
+        background: #ff4444;
+      }
+
+      .music-icon.paused i {
+        opacity: 0.5;
+      }
+
+      audio {
+        display: none;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 32px;
+        }
+
+        .thankyou-card {
+          padding: 30px 20px;
+        }
+
+        .message {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thankyou-container">
+      <div class="thankyou-card">
+        <div class="success-icon">
+          <i class="fa fa-check"></i>
+        </div>
+
+        <h1>OBRIGADO! <span class="highlight">🎧</span></h1>
+
+        <p class="message">
+          Seu e-mail foi cadastrado com sucesso!<br />
+          Agora você faz parte da
+          <strong class="highlight">Família DJ Fernando Lopes</strong>.
+        </p>
+
+        <div class="benefits">
+          <h3>Você receberá em primeira mão:</h3>
+          <ul>
+            <li>
+              <i class="fa fa-calendar"></i> Datas e locais dos próximos eventos
+            </li>
+            <li>
+              <i class="fa fa-music"></i> Lançamentos exclusivos e sets ao vivo
+            </li>
+            <li>
+              <i class="fa fa-ticket"></i> Promoções e ingressos antecipados
+            </li>
+            <li>
+              <i class="fa fa-gift"></i> Conteúdos exclusivos para assinantes
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/djfernandolopes_oficial/"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a
+            href="https://wa.me/5522999037776"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fa fa-whatsapp"></i>
+          </a>
+          <!--  <a href="https://www.youtube.com/@djfernandolopes" class="social-link" target="_blank">
+                <i class="fa fa-youtube-play"></i>
+            </a>-->
+          <a
+            href="mailto:fernandolopesdj@yahoo.com.br"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+
+        <a href="./index.html" class="btn-home">
+          <i class="fa fa-home"></i> Voltar ao site
+        </a>
+      </div>
+    </div>
+
+    <!-- Botão de música -->
+    <div class="music-icon" id="musicToggle">
+      <i class="fa fa-headphones"></i>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="music-files/1.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+      // Função para tocar música ao clicar
+      const musicBtn = document.getElementById("musicToggle");
+      const bgMusic = document.getElementById("bgMusic");
+      let isPlaying = false;
+
+      musicBtn.addEventListener("click", function () {
+        if (isPlaying) {
+          bgMusic.pause();
+          musicBtn.classList.add("paused");
+          musicBtn.querySelector("i").className = "fa fa-play";
+        } else {
+          bgMusic.play();
+          musicBtn.classList.remove("paused");
+          musicBtn.querySelector("i").className = "fa fa-headphones";
+        }
+        isPlaying = !isPlaying;
+      });
+
+      // Redirecionamento automático após 8 segundos (opcional)
+      // setTimeout(function() {
+      //     window.location.href = './index.html';
+      // }, 8000);
+    </script>
+
+    <!-- Scripts necessários -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
