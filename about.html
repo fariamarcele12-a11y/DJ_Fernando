@@ -326,10 +326,31 @@
           <div class="col-lg-3 offset-lg-1 col-md-6">
             <div class="footer__newslatter">
               <h4>Fique por dentro</h4>
-              <form action="#">
-                <input type="text" placeholder="Email" />
+              <form
+                id="newsletterForm"
+                action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
+                method="POST"
+              >
+                <!-- Proteção anti-spam -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <!-- Redirecionamento após envio (opcional) -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://dj-fernando.vercel.app/obrigado.html"
+                />
+                <!-- Impede que o botão de enviar seja pressionado duas vezes -->
+                <input type="hidden" name="_blacklist" value="spammy pattern" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu melhor e-mail"
+                  required
+                />
                 <button type="submit"><i class="fa fa-send-o"></i></button>
               </form>
+              <div id="formFeedback" class="feedback-message"></div>
             </div>
           </div>
         </div>
@@ -351,5 +372,7 @@
     <!-- Music Plugin -->
     <script src="js/jquery.jplayer.min.js"></script>
     <script src="js/jplayerInit.js"></script>
+
+    <script src="js/send_email.js"></script>
   </body>
 </html>
