@@ -30,6 +30,7 @@ $(document).ready(function () {
           "✅ E-mail cadastrado com sucesso! Você receberá nossas novidades.",
         );
         form.find('input[name="email"]').val("");
+        window.location.href = "https://dj-fernando.vercel.app/obrigado.html";
         setTimeout(function () {
           formFeedback.fadeOut("slow", function () {
             $(this).removeClass("success").html("").show();
