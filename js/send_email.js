@@ -52,3 +52,60 @@ $(document).ready(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  $("#contactForm").on("submit", function (e) {
+    e.preventDefault();
+
+    var form = $(this);
+    var feedback = $("#contactFeedback");
+    var submitBtn = form.find('button[type="submit"]');
+
+    var nome = form.find('input[name="nome"]').val();
+    var email = form.find('input[name="email"]').val();
+    var telefone = form.find('input[name="telefone"]').val();
+    var mensagem = form.find('textarea[name="mensagem"]').val();
+
+    // Validação simples
+    if (!nome || !email || !telefone || !mensagem) {
+      feedback.removeClass("success").addClass("error");
+      feedback.text("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    if (!email.includes("@")) {
+      feedback.removeClass("success").addClass("error");
+      feedback.text("Por favor, insira um e-mail válido.");
+      return;
+    }
+
+    // Desabilita botão
+    submitBtn.prop("disabled", true);
+    feedback.removeClass("error").addClass("success");
+    feedback.text("Enviando mensagem...");
+
+    $.ajax({
+      url: form.attr("action"),
+      method: form.attr("method"),
+      data: form.serialize(),
+
+      success: function () {
+        feedback.text("✅ Mensagem enviada com sucesso! Em breve entraremos em contato.");
+
+        form.trigger("reset");
+
+        // Redireciona
+        window.location.href = "https://dj-fernando.vercel.app/obrigado.html";
+      },
+
+      error: function () {
+        feedback.removeClass("success").addClass("error");
+        feedback.text("❌ Erro ao enviar. Tente novamente.");
+      },
+
+      complete: function () {
+        submitBtn.prop("disabled", false);
+      },
+    });
+  });
+});

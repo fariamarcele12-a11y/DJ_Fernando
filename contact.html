@@ -54,7 +54,7 @@
                   <li><a href="./index.html">Início</a></li>
                   <li><a href="./about.html">Sobre</a></li>
                   <li><a href="./service.html">Serviços</a></li>
-                  
+
                   <li><a href="./videos.html">Vídeos</a></li>
                   <li class="active"><a href="./contact.html">Contato</a></li>
                 </ul>
@@ -150,15 +150,51 @@
                 o formulário abaixo e nossa equipe entrará em contato com você o
                 mais rápido possível.
               </p>
-              <form action="#">
+              <form
+                id="contactForm"
+                action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
+                method="POST"
+              >
+                <!-- Configurações -->
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://dj-fernando.vercel.app/obrigado.html"
+                />
+
                 <div class="input__list">
-                  <input type="text" placeholder="Seu nome" />
-                  <input type="email" placeholder="Seu email" />
-                  <input type="text" placeholder="Seu site (opcional)" />
+                  <input
+                    type="text"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Seu email"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="telefone"
+                    placeholder="Seu telefone"
+                    required
+                  />
                 </div>
-                <textarea placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                <textarea
+                  name="mensagem"
+                  placeholder="Escreva sua mensagem aqui..."
+                  required
+                ></textarea>
+
                 <button type="submit" class="site-btn">ENVIAR MENSAGEM</button>
               </form>
+
+              <div id="contactFeedback" class="feedback-message"></div>
             </div>
           </div>
         </div>
@@ -189,7 +225,7 @@
               </ul>
             </div>
           </div>
-            <div class="col-lg-4 offset-lg-1 col-md-6">
+          <div class="col-lg-4 offset-lg-1 col-md-6">
             <div class="footer__social">
               <h2>DJ Fernando Lopes</h2>
               <div class="footer__social__links">
@@ -241,7 +277,7 @@
           </div>
         </div>
         <!-- Copyright-->
-               <div class="footer__copyright__text">
+        <div class="footer__copyright__text">
           <p>
             Copyright &copy;
             <script>
