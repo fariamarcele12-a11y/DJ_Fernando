@@ -36,7 +36,7 @@
     </div>
 
     <!-- Header Section Begin -->
-     <header class="header">
+    <header class="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-md-2">
@@ -53,7 +53,7 @@
                   <li><a href="./index.html">Início</a></li>
                   <li class="active"><a href="./about.html">Sobre</a></li>
                   <li><a href="./service.html">Serviços</a></li>
-                  
+
                   <li><a href="./videos.html">Vídeos</a></li>
                   <li><a href="./contact.html">Contato</a></li>
                 </ul>
@@ -286,73 +286,130 @@
     <!-- About Services Section End -->
 
     <!-- Footer Section Begin -->
-    <footer
-      class="footer footer--normal spad set-bg"
-      data-setbg="img/footer-bg.png"
-    >
+    <footer class="footer spad" style="margin-top: 200px;">
+      <!-- Onda decorativa -->
+      <div class="footer-wave"></div>
+
       <div class="container">
         <div class="row">
+          <!-- CONTATO -->
           <div class="col-lg-3 col-md-6">
             <div class="footer__address">
               <ul>
                 <li>
                   <i class="fa fa-phone"></i>
+
                   <p>Telefone</p>
+
                   <h6>+55 (22) 99903-7776</h6>
                 </li>
+
                 <li>
                   <i class="fa fa-envelope"></i>
+
                   <p>E-mail</p>
+
                   <h6>fernandolopesdj@yahoo.com.br</h6>
                 </li>
               </ul>
             </div>
           </div>
+
+          <!-- SOCIAL -->
           <div class="col-lg-4 offset-lg-1 col-md-6">
             <div class="footer__social">
-              <h2>Dj Fernando Lopes</h2>
+              <h2>DJ Fernando Lopes</h2>
+
               <div class="footer__social__links">
-                <a href="https://www.facebook.com/fernandolopesdj/"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/djfernandolopes_oficial/"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <!-- WhatsApp -->
+                <a
+                  href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/djfernandolopes_oficial/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fa fa-instagram"></i>
+                </a>
+
+                <!-- Email -->
+                <a
+                  href="mailto:fernandolopesdj@yahoo.com.br?subject=Orçamento%20DJ&body=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
+                  aria-label="E-mail"
+                >
+                  <i class="fa fa-envelope"></i>
+                </a>
               </div>
             </div>
           </div>
+
+          <!-- NEWSLETTER -->
           <div class="col-lg-3 offset-lg-1 col-md-6">
             <div class="footer__newslatter">
               <h4>Fique por dentro</h4>
+
               <form
                 id="newsletterForm"
                 action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
                 method="POST"
               >
-                <!-- Proteção anti-spam -->
+                <!-- Configurações -->
                 <input type="hidden" name="_captcha" value="false" />
+
                 <input type="hidden" name="_template" value="table" />
-                <!-- Redirecionamento após envio (opcional) -->
+
                 <input
                   type="hidden"
                   name="_next"
                   value="https://dj-fernando.vercel.app/obrigado.html"
                 />
-                <!-- Impede que o botão de enviar seja pressionado duas vezes -->
-                <input type="hidden" name="_blacklist" value="spammy pattern" />
+
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Novo cadastro na Newsletter - DJ Fernando Lopes"
+                />
+
+                <!-- Campo Email -->
                 <input
                   type="email"
                   name="email"
                   placeholder="Seu melhor e-mail"
                   required
                 />
-                <button type="submit"><i class="fa fa-send-o"></i></button>
+
+                <!-- Botão -->
+                <button type="submit" aria-label="Enviar">
+                  <i class="fa fa-send-o"></i>
+                </button>
               </form>
+
+              <!-- Feedback -->
               <div id="formFeedback" class="feedback-message"></div>
             </div>
           </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer__copyright__text">
+          <p>
+            Copyright &copy;
+
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+
+            <strong>DJ Fernando Lopes</strong> | Todos os direitos reservados. A
+            música é a minha linguagem, e compartilhá-la com você é a minha
+            maior paixão.
+          </p>
         </div>
       </div>
     </footer>
