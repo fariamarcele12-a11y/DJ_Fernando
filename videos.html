@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="DJoz Template" />
-    <meta name="keywords" content="DJoz, unica, creative, html" />
+    <meta name="description" content="DJ Fernando Lopes - Vídeos e Apresentações" />
+    <meta name="keywords" content="DJ Fernando Lopes, vídeos, shows, apresentações, música eletrônica" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DJoz | Template</title>
+    <title>DJ Fernando Lopes | Vídeos</title>
 
     <!-- Google Font -->
     <link
@@ -24,6 +24,108 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <!-- Estilos corretivos para manter a fidelidade visual -->
+    <style>
+      /* Correção do breadcrumb - não sobrepor o header */
+      .breadcrumb-option {
+        padding-top: 100px;
+      }
+      
+      /* Correção do footer - remover margin extra */
+      .footer {
+        margin-top: 0 !important;
+        position: relative;
+        clear: both;
+      }
+      
+      /* Garantir que o vídeo principal tenha altura adequada */
+      .videos__large__item {
+        min-height: 450px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+      
+      /* Garantir que os cards de vídeo tenham altura consistente */
+      .videos__item {
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+      
+      .videos__item:hover {
+        transform: translateY(-5px);
+      }
+      
+      .videos__item__pic {
+        min-height: 180px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+      
+      .videos__item__text {
+        padding: 15px;
+        text-align: center;
+      }
+      
+      .videos__item__text h5 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+      
+      /* Correção dos botões de play */
+      .play-btn {
+        transition: transform 0.3s ease;
+      }
+      
+      .play-btn:hover {
+        transform: scale(1.1);
+      }
+      
+      /* Responsividade */
+      @media (max-width: 991px) {
+        .breadcrumb-option {
+          padding-top: 80px;
+        }
+        .videos__large__item {
+          min-height: 350px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .videos__large__item {
+          min-height: 280px;
+        }
+        .videos__item__pic {
+          min-height: 150px;
+        }
+      }
+      
+      /* Ajuste do título */
+      .section-title.center-title {
+        margin-bottom: 50px;
+      }
+      
+      /* Corrigir slider */
+      .videos__slider.owl-carousel .owl-stage-outer {
+        padding: 10px 0;
+      }
+      
+      .videos__slider .col-lg-3 {
+        max-width: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -50,15 +152,13 @@
                   <li><a href="./index.html">Início</a></li>
                   <li><a href="./about.html">Sobre</a></li>
                   <li><a href="./service.html">Serviços</a></li>
-
                   <li class="active"><a href="./videos.html">Vídeos</a></li>
                   <li><a href="./contact.html">Contato</a></li>
                 </ul>
               </nav>
               <div class="header__right__social">
                 <a
-                  href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ.
-"
+                  href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   ><i class="fa fa-whatsapp"></i
                 ></a>
                 <a href="https://www.instagram.com/djfernandolopes_oficial/"
@@ -81,9 +181,9 @@
     <div class="breadcrumb-option">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="margin-top: 30px;">
             <div class="breadcrumb__links">
-              <a href="#"><i class="fa fa-home"></i> Início</a>
+              <a href="./index.html"><i class="fa fa-home"></i> Início</a>
               <span>Vídeos</span>
             </div>
           </div>
@@ -98,8 +198,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title center-title">
-              <h2>YOutube feed</h2>
-              <h1>Latest videos</h1>
+              <h2>Vídeos</h2>
             </div>
             <div
               class="videos__large__item set-bg"
@@ -112,12 +211,11 @@
               ></a>
               <div class="videos__large__item__text">
                 <h4>
-                  Martin Garrix & Pierce Fulton feat. Mike Shinoda - Waiting For
-                  Tomorrow (Official Video)
+                  DJ Fernando Lopes Ao Vivo | Sunset Festival 2024
                 </h4>
                 <ul>
-                  <li>02:35:18</li>
-                  <li>Dec 17, 2019</li>
+                  <li>01:45:30</li>
+                  <li>Dez 15, 2024</li>
                 </ul>
               </div>
             </div>
@@ -137,11 +235,11 @@
                     </div>
                     <div class="videos__item__text">
                       <h5>
-                        Electric Love Festival 2019 - The Opening Ceremony
+                        DJ Fernando Lopes - Live @ Club Sound 2024
                       </h5>
                       <ul>
-                        <li>02:35:18</li>
-                        <li>Dec 17, 2019</li>
+                        <li>02:15:18</li>
+                        <li>Dez 10, 2024</li>
                       </ul>
                     </div>
                   </div>
@@ -160,11 +258,11 @@
                     </div>
                     <div class="videos__item__text">
                       <h5>
-                        Tiësto - Live Electric Daisy Carnival Las Vegas 2019
+                        Set Especial - Ano Novo 2024
                       </h5>
                       <ul>
-                        <li>02:35:18</li>
-                        <li>Dec 17, 2019</li>
+                        <li>03:20:45</li>
+                        <li>Jan 01, 2024</li>
                       </ul>
                     </div>
                   </div>
@@ -183,11 +281,11 @@
                     </div>
                     <div class="videos__item__text">
                       <h5>
-                        Martin Garrix - Live @ Ultra Music Festival Miami 2019
+                        Making Of: "Ritmo da Cidade"
                       </h5>
                       <ul>
-                        <li>02:35:18</li>
-                        <li>Dec 17, 2019</li>
+                        <li>00:15:30</li>
+                        <li>Nov 28, 2024</li>
                       </ul>
                     </div>
                   </div>
@@ -205,10 +303,10 @@
                       ></a>
                     </div>
                     <div class="videos__item__text">
-                      <h5>Armin van Buuren live at Tomorrowland 2019</h5>
+                      <h5>DJ Fernando Lopes - Live @ Tomorrowland Brasil 2024</h5>
                       <ul>
-                        <li>02:35:18</li>
-                        <li>Dec 17, 2019</li>
+                        <li>01:55:20</li>
+                        <li>Out 20, 2024</li>
                       </ul>
                     </div>
                   </div>
@@ -227,11 +325,11 @@
                     </div>
                     <div class="videos__item__text">
                       <h5>
-                        Martin Garrix - Live @ Ultra Music Festival Miami 2019
+                        Entrevista Exclusiva: A Trajetória do DJ Fernando
                       </h5>
                       <ul>
-                        <li>02:35:18</li>
-                        <li>Dec 17, 2019</li>
+                        <li>00:45:22</li>
+                        <li>Set 05, 2024</li>
                       </ul>
                     </div>
                   </div>
@@ -245,10 +343,7 @@
     <!-- Video Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad" style="margin-top: 200px;">
-      <!-- Onda decorativa -->
-      <div class="footer-wave"></div>
-
+    <footer class="footer spad">
       <div class="container">
         <div class="row">
           <!-- CONTATO -->
@@ -257,17 +352,12 @@
               <ul>
                 <li>
                   <i class="fa fa-phone"></i>
-
                   <p>Telefone</p>
-
                   <h6>+55 (22) 99903-7776</h6>
                 </li>
-
                 <li>
                   <i class="fa fa-envelope"></i>
-
                   <p>E-mail</p>
-
                   <h6>fernandolopesdj@yahoo.com.br</h6>
                 </li>
               </ul>
@@ -278,9 +368,7 @@
           <div class="col-lg-4 offset-lg-1 col-md-6">
             <div class="footer__social">
               <h2>DJ Fernando Lopes</h2>
-
               <div class="footer__social__links">
-                <!-- WhatsApp -->
                 <a
                   href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   target="_blank"
@@ -288,8 +376,6 @@
                 >
                   <i class="fa fa-whatsapp"></i>
                 </a>
-
-                <!-- Instagram -->
                 <a
                   href="https://www.instagram.com/djfernandolopes_oficial/"
                   target="_blank"
@@ -297,8 +383,6 @@
                 >
                   <i class="fa fa-instagram"></i>
                 </a>
-
-                <!-- Email -->
                 <a
                   href="mailto:fernandolopesdj@yahoo.com.br?subject=Orçamento%20DJ&body=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   aria-label="E-mail"
@@ -313,44 +397,33 @@
           <div class="col-lg-3 offset-lg-1 col-md-6">
             <div class="footer__newslatter">
               <h4>Fique por dentro</h4>
-
               <form
                 id="newsletterForm"
                 action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
                 method="POST"
               >
-                <!-- Configurações -->
                 <input type="hidden" name="_captcha" value="false" />
-
                 <input type="hidden" name="_template" value="table" />
-
                 <input
                   type="hidden"
                   name="_next"
                   value="https://dj-fernando.vercel.app/obrigado.html"
                 />
-
                 <input
                   type="hidden"
                   name="_subject"
                   value="Novo cadastro na Newsletter - DJ Fernando Lopes"
                 />
-
-                <!-- Campo Email -->
                 <input
                   type="email"
                   name="email"
                   placeholder="Seu melhor e-mail"
                   required
                 />
-
-                <!-- Botão -->
                 <button type="submit" aria-label="Enviar">
                   <i class="fa fa-send-o"></i>
                 </button>
               </form>
-
-              <!-- Feedback -->
               <div id="formFeedback" class="feedback-message"></div>
             </div>
           </div>
@@ -360,11 +433,9 @@
         <div class="footer__copyright__text">
           <p>
             Copyright &copy;
-
             <script>
               document.write(new Date().getFullYear());
             </script>
-
             <strong>DJ Fernando Lopes</strong> | Todos os direitos reservados. A
             música é a minha linguagem, e compartilhá-la com você é a minha
             maior paixão.

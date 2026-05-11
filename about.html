@@ -27,6 +27,94 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <!-- Estilos corretivos para manter a fidelidade visual -->
+    <style>
+      /* Correção do breadcrumb - não sobrepor o header */
+      .breadcrumb-option {
+        padding-top: 100px;
+      }
+      
+      /* Correção das imagens da galeria - manter responsivas */
+      .about-pic img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /* Correção do footer - remover margin extra */
+      .footer {
+        margin-top: 0 !important;
+        position: relative;
+        clear: both;
+      }
+      
+      /* Garantir altura correta do vídeo skills */
+      .skills__video {
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* Garantir que os serviços cards mantenham altura e alinhamento */
+      .about__services__item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .about__services__item__pic {
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      
+      .about__services__item__text {
+        flex: 1;
+        padding: 20px;
+      }
+      
+      /* Correção do ícone dentro do card de serviço */
+      .about__services__item__pic .icon {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background: #999a9c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      
+      .about__services__item__pic .icon img {
+        width: 30px;
+        height: auto;
+      }
+      
+      /* Responsividade */
+      @media (max-width: 991px) {
+        .breadcrumb-option {
+          padding-top: 80px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .skills__video {
+          min-height: 300px;
+        }
+        .about__services__item__pic {
+          min-height: 180px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -53,15 +141,13 @@
                   <li><a href="./index.html">Início</a></li>
                   <li class="active"><a href="./about.html">Sobre</a></li>
                   <li><a href="./service.html">Serviços</a></li>
-
                   <li><a href="./videos.html">Vídeos</a></li>
                   <li><a href="./contact.html">Contato</a></li>
                 </ul>
               </nav>
               <div class="header__right__social">
                 <a
-                  href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ.
-"
+                  href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   ><i class="fa fa-whatsapp"></i
                 ></a>
                 <a href="https://www.instagram.com/djfernandolopes_oficial/"
@@ -84,7 +170,7 @@
     <div class="breadcrumb-option">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="margin-top: 30px;">
             <div class="breadcrumb__links">
               <a href="index.html"><i class="fa fa-home"></i> Início</a>
               <span>Sobre</span>
@@ -103,7 +189,6 @@
             <div class="skills__content">
               <div class="section-title">
                 <h2>DJ Fernando Lopes</h2>
-                <h1>DJ’s skill</h1>
               </div>
               <p>
                 DJ Rainflow knows how to move your mind, body and soul by
@@ -218,7 +303,6 @@
           <div class="col-lg-12">
             <div class="section-title center-title">
               <h2>WHERE DO I PLAY</h2>
-              <h1>Best service</h1>
             </div>
           </div>
         </div>
@@ -286,10 +370,7 @@
     <!-- About Services Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad" style="margin-top: 200px;">
-      <!-- Onda decorativa -->
-      <div class="footer-wave"></div>
-
+    <footer class="footer spad">
       <div class="container">
         <div class="row">
           <!-- CONTATO -->
@@ -298,17 +379,12 @@
               <ul>
                 <li>
                   <i class="fa fa-phone"></i>
-
                   <p>Telefone</p>
-
                   <h6>+55 (22) 99903-7776</h6>
                 </li>
-
                 <li>
                   <i class="fa fa-envelope"></i>
-
                   <p>E-mail</p>
-
                   <h6>fernandolopesdj@yahoo.com.br</h6>
                 </li>
               </ul>
@@ -319,9 +395,7 @@
           <div class="col-lg-4 offset-lg-1 col-md-6">
             <div class="footer__social">
               <h2>DJ Fernando Lopes</h2>
-
               <div class="footer__social__links">
-                <!-- WhatsApp -->
                 <a
                   href="https://wa.me/5522999037776?text=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   target="_blank"
@@ -329,8 +403,6 @@
                 >
                   <i class="fa fa-whatsapp"></i>
                 </a>
-
-                <!-- Instagram -->
                 <a
                   href="https://www.instagram.com/djfernandolopes_oficial/"
                   target="_blank"
@@ -338,8 +410,6 @@
                 >
                   <i class="fa fa-instagram"></i>
                 </a>
-
-                <!-- Email -->
                 <a
                   href="mailto:fernandolopesdj@yahoo.com.br?subject=Orçamento%20DJ&body=Olá,%20DJ%20Fernando%20Lopes!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20seu%20serviço%20de%20DJ."
                   aria-label="E-mail"
@@ -354,44 +424,33 @@
           <div class="col-lg-3 offset-lg-1 col-md-6">
             <div class="footer__newslatter">
               <h4>Fique por dentro</h4>
-
               <form
                 id="newsletterForm"
                 action="https://formsubmit.co/fernandolopesdj@yahoo.com.br"
                 method="POST"
               >
-                <!-- Configurações -->
                 <input type="hidden" name="_captcha" value="false" />
-
                 <input type="hidden" name="_template" value="table" />
-
                 <input
                   type="hidden"
                   name="_next"
                   value="https://dj-fernando.vercel.app/obrigado.html"
                 />
-
                 <input
                   type="hidden"
                   name="_subject"
                   value="Novo cadastro na Newsletter - DJ Fernando Lopes"
                 />
-
-                <!-- Campo Email -->
                 <input
                   type="email"
                   name="email"
                   placeholder="Seu melhor e-mail"
                   required
                 />
-
-                <!-- Botão -->
                 <button type="submit" aria-label="Enviar">
                   <i class="fa fa-send-o"></i>
                 </button>
               </form>
-
-              <!-- Feedback -->
               <div id="formFeedback" class="feedback-message"></div>
             </div>
           </div>
@@ -401,11 +460,9 @@
         <div class="footer__copyright__text">
           <p>
             Copyright &copy;
-
             <script>
               document.write(new Date().getFullYear());
             </script>
-
             <strong>DJ Fernando Lopes</strong> | Todos os direitos reservados. A
             música é a minha linguagem, e compartilhá-la com você é a minha
             maior paixão.
